@@ -21,9 +21,9 @@ __userid__ = 'srihari'
 __passwd__ = '123'
 
 @app.route('/')
-def dbtest():
+def hello():
+	return "Hello world"
 
-	return tokens[1]
 
 @app.route('/myapi', methods=['POST'])
 def api():
