@@ -38,7 +38,6 @@ def auth_token():
 	'token': index + tokensList[index],
 	'API_REQ_DATA': 'GET SECRET MESSAGE'
 	}
-	print(index + tokensList[index])
 	res = requests.post(API, payload).json()
 	if res['success']:
 		validToken = res['validToken']
@@ -52,5 +51,5 @@ def auth_token():
 if auth():
 	while auth_token():
 		print(msgAPI)
-		#print(API_RESULT)
+		print(API_RESULT)
 
